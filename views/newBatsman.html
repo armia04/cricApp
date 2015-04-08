@@ -1,0 +1,24 @@
+<div class="col-xs-12 col-sm-12">
+  <div class="row">
+    <button class="btn btn-default btn-circle"  data-toggle="modal" data-target="#newBatsman1">
+      <span class="glyphicon glyphicon-plus addBatsman" aria-hidden="true"></span>
+    </button>
+    <!-- newBatsman1 -->
+    <div class="modal fade" id="newBatsman1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Enter the Batsman Name:</h4>
+          </div>
+          <div class="modal-body">
+            <input type="text" class="NewBatsman" ng-model="playerName" />
+          </div>
+          <div class="modal-footer">
+            <a href="#/added/{{playerName}}" ><button type="button" class="btn btn-primary"  >ADD</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
